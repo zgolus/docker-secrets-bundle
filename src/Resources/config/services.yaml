@@ -1,6 +1,3 @@
-parameters:
-  aws_sdk.class: Aws\Sdk
-
 services:
   Zgolus\DockerSecretsBundle\DependencyInjection\EnvVarProcessor:
     autowire: true
