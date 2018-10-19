@@ -1,0 +1,22 @@
+{
+  "name": "zgolus/docker-secrets-bundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jakub Zgolinski",
+      "email": "jakub@zgolinski.net"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Zgolus\\Consumer\\": "src/"
+    }
+  },
+  "require": {
+    "php": "~7.0",
+    "symfony/dependency-injection": "~4.0"
+  }
+}
