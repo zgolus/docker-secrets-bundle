@@ -3,7 +3,7 @@ Docker Secrets Bundle
 
 #### Installation:
 
-- Add repository to `composer.json`
+Add repository to `composer.json`:
 
 ```
 {
@@ -18,5 +18,7 @@ Docker Secrets Bundle
     ...
 }
 ```
-- `composer require 'zgolus/docker-secrets-bundle:^0.1.0'`
-- `composer install`
+Install the bundle:
+```
+composer require 'zgolus/docker-secrets-bundle:^1.0'
+```

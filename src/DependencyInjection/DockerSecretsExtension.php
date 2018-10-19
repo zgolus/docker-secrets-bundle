@@ -11,12 +11,8 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
  * Class Extension
  * @package Zgolus\DockerSecretsBundle\DependencyInjection
  */
-class ZgolusDockerSecretsExtension extends Extension
+class DockerSecretsExtension extends Extension
 {
-    public function __construct()
-    {
-        die('...');
-    }
     /**
      * @param array $configs
      * @param ContainerBuilder $container
@@ -24,10 +20,10 @@ class ZgolusDockerSecretsExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
-        $configuration = new Configuration();
-        $config = $this->processConfiguration($configuration, $configs);
-        $container->setParameter('app_config', $config);
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config/'));
+        $loader = new YamlFileLoader(
+            $container,
+            new FileLocator(__DIR__.'/../Resources/config')
+        );
         $loader->load('services.yaml');
     }
 }
