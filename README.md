@@ -18,5 +18,5 @@ Docker Secrets Bundle
     ...
 }
 ```
-- `composer require 'zgolus/docker-secrets-bundle:^0.1.0',`
+- `composer require 'zgolus/docker-secrets-bundle:^0.1.0'`
 - `composer install`
